@@ -7,147 +7,171 @@
   
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      font-size: 16px;
       line-height: 1.6;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px 30px;
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 0 1em;
+      background-color: #fdfdfd;
       color: #222;
-      background: #fff;
     }
-    h1, h2, h3 {
-      color: #111;
+    h1, h2 {
+      font-weight: normal;
+      color: #003366;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.2em;
+      margin-top: 2em;
     }
-    h1 {
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 8px;
-      margin-bottom: 0.4em;
+    h3 {
+      color: #003366;
+      font-weight: normal;
+      margin-top: 1.8em;
     }
     a {
-      color: #0066cc;
+      color: #003366;
       text-decoration: none;
     }
     a:hover {
       text-decoration: underline;
     }
-    ul, ol {
-      padding-left: 1.8em;
+    ul {
+      padding-left: 1.2em;
+      margin-bottom: 1.2em;
     }
-    .back-link {
-      margin: 2em 0;
-      font-size: 1.05em;
+    .section {
+      margin-bottom: 2em;
     }
-    hr {
-      border: 0;
-      height: 1px;
-      background: #ddd;
-      margin: 2.5em 0;
+    .pub-title {
+      font-weight: bold;
+    }
+    .venue {
+      font-style: italic;
     }
     .highlight {
       font-weight: bold;
+    }
+    .back-link {
+      margin: 2em 0;
+      display: inline-block;
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid #ccc;
+      margin: 2.5em 0;
     }
   </style>
 </head>
 <body>
 
   <h1>Harry Wai Ho Wong</h1>
-  <p style="font-size: 1.15em; margin-top: -0.6em;">
+  <p style="font-size: 1.1em; margin-top: -0.5em; color: #444;">
     Incoming Assistant Professor<br>
     Department of Computer Science<br>
-    National Yung Ming Chiao Tung University
+    National Yang Ming Chiao Tung University
   </p>
 
   <h2>Applied Cryptography Lab</h2>
 
-  <p>
-    The Applied Cryptography Lab focuses on designing practical cryptographic protocols and systems that balance efficiency, security, and privacy in real-world applications. 
-    Current emphasis includes threshold cryptography for decentralized and dynamic settings, privacy-preserving authentication, secure multiparty computation, and countermeasures against cryptographic misuse. 
-    The work bridges theoretical foundations with deployable solutions for blockchain, financial systems, anonymous credentials, and beyond.
-  </p>
+  <div class="section">
+    <p>
+      The Applied Cryptography Lab focuses on designing practical cryptographic protocols and systems that balance efficiency, security, and privacy in real-world applications.
+      Current emphasis includes threshold cryptography for decentralized and dynamic settings, privacy-preserving authentication, secure multiparty computation, and countermeasures against cryptographic misuse.
+      The work bridges theoretical foundations with deployable solutions for blockchain, financial systems, anonymous credentials, and beyond.
+    </p>
+  </div>
 
-  <!-- Research Themes -->
-  <h3>Research Themes</h3>
-  <ul>
-    <li>Threshold cryptography (e.g., threshold ECDSA/EdDSA/BBS+, best-of-both-worlds designs for dishonest-majority and disruption resilience)</li>
-    <li>Privacy-preserving authentication and processing of encrypted/authenticated data</li>
-    <li>Secure multiparty computation with improved round/communication efficiency</li>
-    <li>Cryptanalysis and secure design of lattice-based schemes and covert channels</li>
-    <li>Anonymous tag systems, rate-limiting nullifiers, and double authentication preventing signatures</li>
-    <li>Applications to blockchain, central bank digital currencies (CBDCs), and witness encryption</li>
-  </ul>
+  <div class="section">
+    <h3>Research Themes</h3>
+    <ul>
+      <li>Threshold cryptography (e.g., threshold ECDSA/EdDSA/BBS+, best-of-both-worlds designs for dishonest-majority and disruption resilience)</li>
+      <li>Privacy-preserving authentication and processing of encrypted/authenticated data</li>
+      <li>Secure multiparty computation with improved round/communication efficiency</li>
+      <li>Cryptanalysis and secure design of lattice-based schemes and covert channels</li>
+      <li>Anonymous tag systems, rate-limiting nullifiers, and double authentication preventing signatures</li>
+      <li>Applications to blockchain, central bank digital currencies (CBDCs), and witness encryption</li>
+    </ul>
+  </div>
 
-  <h3>Selected Publications</h3>
-  <ul>
-    <li><span class="highlight">Harry W. H. Wong</span>, Jack P. K. Ma, Sherman S. M. Chow. “Secure Multiparty Computation of Threshold Signatures Made More Efficient.” <em>NDSS 2024</em>. (Citations: 10)</li>
-    <li><span class="highlight">Harry W. H. Wong</span>, Jack P. K. Ma, Hoover H. F. Yin, Sherman S. M. Chow. “Real Threshold ECDSA.” <em>NDSS 2023</em>. (Citations: 24)</li>
-    <li>Hoover H. F. Yin, <span class="highlight">Harry W. H. Wong</span>. “How (Not) to Build Dual-Regev Covert Channel.” <em>IH&MMSec 2025</em>.</li>
-    <li>Yingfei Yan, Sherman S. M. Chow, Lucien K. L. Ng, <span class="highlight">Harry W. H. Wong</span>, Yongjun Zhao, Baocang Wang. “Batch Anonymous MAC Tokens from Lattices.” <em>PQ-Crypto 2025</em>.</li>
-    <li>Zhipeng Wang, Orestis Alpos, Alireza Kavousi, Sze Yiu Chau, Duc V. Le, Christian Cachin, <span class="highlight">Harry W. H. Wong</span>. “DSKE: Digital Signatures with Key Extraction.” <em>CT-RSA 2025</em>. (Citations: 4)</li>
-    <li><span class="highlight">Harry W. H. Wong</span>, Jack P. K. Ma, Hoover H. F. Yin, Sherman S. M. Chow. “How (Not) to Build Threshold EdDSA.” <em>RAID 2023</em>. (Citations: 5)</li>
-  </ul>
+  <div class="section">
+    <h3>Selected Publications</h3>
+    <ul>
+      <li><span class="highlight">Harry W. H. Wong</span>, Jack P. K. Ma, Sherman S. M. Chow. <span class="pub-title">“Secure Multiparty Computation of Threshold Signatures Made More Efficient.”</span> <span class="venue">NDSS 2024</span>. (Citations: 10)</li>
+      <li><span class="highlight">Harry W. H. Wong</span>, Jack P. K. Ma, Hoover H. F. Yin, Sherman S. M. Chow. <span class="pub-title">“Real Threshold ECDSA.”</span> <span class="venue">NDSS 2023</span>. (Citations: 24)</li>
+      <li>Hoover H. F. Yin, <span class="highlight">Harry W. H. Wong</span>. <span class="pub-title">“How (Not) to Build Dual-Regev Covert Channel.”</span> <span class="venue">IH&amp;MMSec 2025</span>.</li>
+      <li>Yingfei Yan, Sherman S. M. Chow, Lucien K. L. Ng, <span class="highlight">Harry W. H. Wong</span>, Yongjun Zhao, Baocang Wang. <span class="pub-title">“Batch Anonymous MAC Tokens from Lattices.”</span> <span class="venue">PQ-Crypto 2025</span>.</li>
+      <li>Zhipeng Wang, Orestis Alpos, Alireza Kavousi, Sze Yiu Chau, Duc V. Le, Christian Cachin, <span class="highlight">Harry W. H. Wong</span>. <span class="pub-title">“DSKE: Digital Signatures with Key Extraction.”</span> <span class="venue">CT-RSA 2025</span>. (Citations: 4)</li>
+      <li><span class="highlight">Harry W. H. Wong</span>, Jack P. K. Ma, Hoover H. F. Yin, Sherman S. M. Chow. <span class="pub-title">“How (Not) to Build Threshold EdDSA.”</span> <span class="venue">RAID 2023</span>. (Citations: 5)</li>
+    </ul>
+  </div>
 
-  <!-- Projects / Ongoing -->
-  <h3>Ongoing & Recent Projects</h3>
-  <ul>
-    <li>
-      <strong>Best-of-Both-Worlds Threshold Signatures & MPC</strong> (2023–present)<br>
-      Developing robust, efficient threshold protocols (e.g., ECDSA, BBS+) that support any threshold, resist disruptions, and feature linear communication via novel threshold linearly homomorphic encryption. Adopted in follow-up works by independent groups.
-    </li>
-    <li>
-      <strong>Dual-Regev Covert Channel Analysis</strong> (with Hoover Yin)<br>
-      Exploring (in)security of lattice-based covert channels; presented at IH&MMSec 2025.
-    </li>
-    <li>
-      <strong>Rate-Limiting Nullifiers & Anonymous Tag Systems</strong> (ongoing)<br>
-      Designing lightweight anonymous rate-limiting mechanisms for blockchains without heavy ZK-SNARKs, with formal security definitions and dynamic membership support.
-    </li>
-    <li>
-      <strong>Double Authentication Preventing Signatures</strong> (ongoing)<br>
-      Fine-grained leakage for conflicting authentications in multi-key identity systems, with hierarchical/wildcard extensions for certificate authorities.
-    </li>
-    <li>
-      <strong>Policy-Based Tracing for CBDCs</strong> (future direction)<br>
-      Balancing privacy and mandated oversight using selective zero-knowledge revelation of transaction policies.
-    </li>
-  </ul>
+  <div class="section">
+    <h3>Ongoing & Recent Projects</h3>
+    <ul>
+      <li>
+        <strong>Best-of-Both-Worlds Threshold Signatures & MPC</strong> (2023–present)<br>
+        Developing robust, efficient threshold protocols (e.g., ECDSA, BBS+) that support any threshold, resist disruptions, and feature linear communication via novel threshold linearly homomorphic encryption. Adopted in follow-up works by independent groups.
+      </li>
+      <li>
+        <strong>Dual-Regev Covert Channel Analysis</strong> (with Hoover Yin)<br>
+        Exploring (in)security of lattice-based covert channels; presented at IH&MMSec 2025.
+      </li>
+      <li>
+        <strong>Rate-Limiting Nullifiers & Anonymous Tag Systems</strong> (ongoing)<br>
+        Designing lightweight anonymous rate-limiting mechanisms for blockchains without heavy ZK-SNARKs, with formal security definitions and dynamic membership support.
+      </li>
+      <li>
+        <strong>Double Authentication Preventing Signatures</strong> (ongoing)<br>
+        Fine-grained leakage for conflicting authentications in multi-key identity systems, with hierarchical/wildcard extensions for certificate authorities.
+      </li>
+      <li>
+        <strong>Policy-Based Tracing for CBDCs</strong> (future direction)<br>
+        Balancing privacy and mandated oversight using selective zero-knowledge revelation of transaction policies.
+      </li>
+    </ul>
+  </div>
 
-  <h3>Join Us</h3>
-  <p>
-    The Applied Cryptography Lab is open to motivated individuals who are enthusiastic about bridging theoretical cryptography with practical, real-world impact. Passion for the field — whether through designing protocols, proving security, implementing prototypes, or exploring new applications — is the most important quality we look for.
-  </p>
-  <p>
-    We welcome candidates with backgrounds in cryptography, mathematics, compututional complexity, or related areas. Proficiency in any of these is valuable:
-  </p>
-  <ul>
-    <li>Strong mathematical foundations (e.g., algebra, number theory, probability)</li>
-    <li>Computer science skills (e.g., algorithms, distributed systems, security theory)</li>
-    <li>Programming experience for cryptographic prototypes (e.g., Rust, Go, Python, or similar)</li>
-  </ul>
-  <p>
-    You do not need to excel in all three — being good in one or more, combined with genuine enthusiasm and willingness to learn, is sufficient. We especially encourage applications from those interested in threshold cryptography, privacy-preserving systems, lattice-based schemes, blockchain security, or related topics aligned with the lab's focus.
-  </p>
-  <p>
-    Opportunities include:
-  </p>
-  <ul>
-    <li>PhD or MPhil supervision (if applying through NYCU CS programs)</li>
-    <li>Visiting scholar/student collaborations</li>
-    <li>Undergraduate final-year projects or internships</li>
-  </ul>
-  <p>
-    If this sounds like you, please reach out via email to <a href="mailto:harrywong0223@hotmail.com">harrywong0223@hotmail.com</a> with:
-  </p>
-  <ul>
-    <li>Your CV/resume</li>
-    <li>A short note on your research interests and why you'd like to work in the lab (even 1–2 paragraphs is fine)</li>
-    <li>Any relevant coursework, projects, code samples, or publications (optional but helpful)</li>
-  </ul>
+  <div class="section">
+    <h3>Join Us</h3>
+    <p>
+      The Applied Cryptography Lab is open to motivated individuals who are enthusiastic about bridging theoretical cryptography with practical, real-world impact. Passion for the field — whether through designing protocols, proving security, implementing prototypes, or exploring new applications — is the most important quality we look for.
+    </p>
+    <p>
+      We welcome candidates with backgrounds in cryptography, mathematics, computational complexity, or related areas. Proficiency in any of these is valuable:
+    </p>
+    <ul>
+      <li>Strong mathematical foundations (e.g., algebra, number theory, probability)</li>
+      <li>Computer science skills (e.g., algorithms, distributed systems, security theory)</li>
+      <li>Programming experience for cryptographic prototypes (e.g., Rust, Go, Python, or similar)</li>
+    </ul>
+    <p>
+      You do not need to excel in all three — being good in one or more, combined with genuine enthusiasm and willingness to learn, is sufficient. We especially encourage applications from those interested in threshold cryptography, privacy-preserving systems, lattice-based schemes, blockchain security, or related topics aligned with the lab's focus.
+    </p>
+    <p>
+      Opportunities include:
+    </p>
+    <ul>
+      <li>PhD or MPhil supervision (if applying through NYCU CS programs)</li>
+      <li>Visiting scholar/student collaborations</li>
+      <li>Undergraduate final-year projects or internships</li>
+    </ul>
+    <p>
+      If this sounds like you, please reach out via email to <a href="mailto:harrywong0223@hotmail.com">harrywong0223@hotmail.com</a> with:
+    </p>
+    <ul>
+      <li>Your CV/resume</li>
+      <li>A short note on your research interests and why you'd like to work in the lab (even 1–2 paragraphs is fine)</li>
+      <li>Any relevant coursework, projects, code samples, or publications (optional but helpful)</li>
+    </ul>
+  </div>
 
   <p class="back-link">
     ← <a href="../">Back to Home</a>
   </p>
 
-  <p style="text-align: center; font-size: 0.95em; color: #555;">
+  <hr>
+
+  <p style="text-align: center; font-size: 0.95em; color: #555; margin-top: 3em;">
     Last updated: January 2026
   </p>
 
